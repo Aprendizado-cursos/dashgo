@@ -3,6 +3,7 @@
         "Page: Login",
         "Componente: Input",
         "Component: Header",
-        "Component: Sidebar"
+        "Component: Sidebar",
+        "Page: Dashboard"
     ]
 }
