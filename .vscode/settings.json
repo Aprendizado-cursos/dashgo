@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "Page: Login",
-        "Componente: Input"
+        "Componente: Input",
+        "Component: Header"
     ]
 }
