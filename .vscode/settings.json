@@ -5,6 +5,7 @@
         "Component: Header",
         "Component: Sidebar",
         "Page: Dashboard",
-        "Page: User"
+        "Page: User",
+        "Component: Pagination"
     ]
 }
