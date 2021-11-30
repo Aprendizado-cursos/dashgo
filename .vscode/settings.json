@@ -4,6 +4,7 @@
         "Componente: Input",
         "Component: Header",
         "Component: Sidebar",
-        "Page: Dashboard"
+        "Page: Dashboard",
+        "Page: User"
     ]
 }
