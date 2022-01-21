@@ -1,23 +1,24 @@
 import {
     Box,
+    Button,
+    Checkbox,
     Flex,
     Heading,
-    Button,
     Icon,
     Table,
-    Thead,
-    Tr,
-    Th,
-    Checkbox,
     Tbody,
     Td,
     Text,
+    Th,
+    Thead,
+    Tr,
     useBreakpointValue,
 } from "@chakra-ui/react";
-import { RiAddLine, RiPencilLine } from "react-icons/ri";
+import { RiAddLine } from "react-icons/ri";
 import { Header } from "../../components/Header";
 import { Pagination } from "../../components/Pagination";
 import { Sidebar } from "../../components/Sidebar";
+import Link from "next/link";
 
 export default function UserList() {
     const isWideVersion = useBreakpointValue({ base: false, lg: true });
@@ -32,14 +33,16 @@ export default function UserList() {
                         <Heading size="lg" fontWeight="normal">
                             Usuários
                         </Heading>
-                        <Button
-                            as="a"
-                            size="sm"
-                            fontSize="sm"
-                            colorScheme="pink"
-                            leftIcon={<Icon fontSize="20" as={RiAddLine}></Icon>}>
-                            Criar novo
-                        </Button>
+                        <Link href="/users/create" passHref>
+                            <Button
+                                as="a"
+                                size="sm"
+                                fontSize="sm"
+                                colorScheme="pink"
+                                leftIcon={<Icon fontSize="20" as={RiAddLine}></Icon>}>
+                                Criar novo
+                            </Button>
+                        </Link>
                     </Flex>
                     <Table colorScheme="whiteAlpha">
                         <Thead>
