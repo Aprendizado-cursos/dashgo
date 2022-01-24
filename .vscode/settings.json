@@ -6,6 +6,7 @@
         "Component: Sidebar",
         "Page: Dashboard",
         "Page: User",
-        "Component: Pagination"
+        "Component: Pagination",
+        "Service: MirageJS"
     ]
 }
