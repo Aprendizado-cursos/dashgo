@@ -13,7 +13,7 @@ import {
     Th,
     Thead,
     Tr,
-    useBreakpointValue
+    useBreakpointValue,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { useEffect } from "react";
@@ -28,7 +28,7 @@ export default function UserList() {
 
     const isWideVersion = useBreakpointValue({ base: false, lg: true });
 
-    useEffect(() => { }, []);
+    useEffect(() => {}, []);
 
     return (
         <Box>
@@ -96,7 +96,7 @@ export default function UserList() {
                                     })}
                                 </Tbody>
                             </Table>
-                            <Pagination></Pagination>
+                            <Pagination totalCountOfRegister={200} currentPage={5} onPageChange={() => {}}></Pagination>
                         </>
                     )}
                 </Box>
